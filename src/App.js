@@ -1,21 +1,33 @@
-
+import React from 'react';
 import './App.css';
 
 function App() {
-  const firstName = 'Saugat';
-  const lastName = 'Shrestha';
-  const age = '23';
-  const Job = "developer";
 
-  //function
-   const getFullName = (firstName, lastName) => `${firstName} ${lastName}`
+  const blogObj = {
+    title: "Blog title 1",
+    description: "hello world"
+  }
+
+
+ 
   return (
     <div className="App">
-      <h3>Full Name: {getFullName(firstName,lastName)} </h3>
-      <p>Age: {age} </p>
-      <p>Job: {Job} </p>
+      <div className='blogstyle'>
+        <h3>{blogObj.title} </h3>
+        <p> {blogObj.description}</p>
+      </div>
+   
+      <div className='blogstyle'>
+        <h3>{blogObj.title} </h3>
+        <p> {blogObj.description}</p>
+      </div>
+   
+      <div className='blogstyle'>
+        <h3>{blogObj.title} </h3>
+        <p> {blogObj.description}</p>
+      </div>
     </div>
   );
-}
+  }
 
 export default App;
